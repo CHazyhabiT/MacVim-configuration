@@ -8,7 +8,7 @@ Installation
 3. 安装Janus,在终端输入如下语句 (详见https://github.com/carlhuda/janus)
   "curl -Lo- http://bit.ly/janus-bootstrap | bash", which backs up any Vim files found in your home folder and install Janus.
 
-   Configuration Customization
+Configuration Customization
 --------------------
 配置 ~/.vimrc 和 ~/.gvimrc
 1. 在MacVim编辑器重输入":version", 将看到MacVim的一些配置信息
