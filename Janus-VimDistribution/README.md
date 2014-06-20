@@ -30,12 +30,19 @@ Configuration Customization
 3. 添加其他plugin
 
   a. 如果想添加其他的Vim plugins, 在终端输入"mkdir ~/.janus"创建文件夹。
+  
   b. 移到该文件夹"cd ~/.janus", "git init"设该文件夹为git repository。
+  
   c. 然后找到相应的plugin,比如auto-pairs(自动补齐成对括号 https://github.com/jiangmiao/auto-pairs)
+  
     输入"git clone https://github.com/jiangmiao/auto-pairs.git auto-pairs"
+    
     或者"git submodule add https://github.com/jiangmiao/auto-pairs.git auto-pairs"
+    
     最后一个参数是plugin存放在的本地文件夹(理论上自己命名), 不过为了统一, 直接与前面的git一致。
 
 4. 推荐plugin
+
   a. auto-pairs https://github.com/jiangmiao/auto-pairs
+  
   b. emmet-vim https://github.com/mattn/emmet-vim for HTML CSS
