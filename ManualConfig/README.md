@@ -10,6 +10,7 @@ Installation
 Configuration
 --------------------
 配置 ~/.vimrc 和 ~/.gvimrc
+
 1. 在MacVim编辑器重输入":version", 将看到MacVim的一些配置信息
 
   a. $VIM系统变量的路径为: "/Applications/MacVim.app/Contents/Resources/vim", MacVim的系统变量路径: "$VIM/vimrc"
@@ -21,6 +22,7 @@ Configuration
   d. MacVim的菜单文件路径: "$VIMRUNTIME/mene.vim"
   
   e. 另外解释下, $HOME为当前用户目录的路径, $VIMRUNTIME路径为"/Applications/MacVim.app/Contents/Resources/vim"。可以在MacVim中输入":echo $VIMRUNTIME"来查看这些系统变量的路径。
+  
 2. 将.vimrc拷贝到$HOME中, 即"$HOME/.vimrc"。
 
 
