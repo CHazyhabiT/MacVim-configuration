@@ -6,6 +6,7 @@ Installation
 1. 下载MacVim: https://code.google.com/p/macvim/, 解压: 将MacVim.app拖入到/Applications目录下。输入":h mvim", 按照提示将mvim脚本文件拷贝到"/usr/local/bin"目录下。
 2. 打开终端, 输入"cd $HOME", 然后"touch .bashrc"创建文件。打开文件, 输入"alias vim=mvim", 保存别名变量。最后在终端输入"source .bashrc" 这样在终端输入vim和mvim都可以启动MacVim.app了。
 3. 安装Janus,在终端输入如下语句 (详见https://github.com/carlhuda/janus)
+
   "curl -Lo- http://bit.ly/janus-bootstrap | bash", which backs up any Vim files found in your home folder and install Janus.
 
 Configuration Customization
@@ -25,6 +26,7 @@ Configuration Customization
   e. 另外解释下, $HOME为当前用户目录的路径, $VIMRUNTIME路径为"/Applications/MacVim.app/Contents/Resources/vim"。可以在MacVim中输入":echo $VIMRUNTIME"来查看这些系统变量的路径。
 
 2. Light Weight Customization
+
   找到用户配置的文件"mvim $HOME/.vimrc", 然后在"source ~/.vimrc.before"之后, "exe 'source ' . g:janus_vim_path . '/core/plugins vim'"之前添加自己的一些个性化配置，比如设置字体，高亮。。。(范例见.vimrc)
 
 3. 添加其他plugin
