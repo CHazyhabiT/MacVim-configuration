@@ -17,8 +17,10 @@ Configuration Customization
   c. 以此类推 "$VIM/gvimrc", "$HOME/.gvimrc"
   d. MacVim的菜单文件路径: "$VIMRUNTIME/mene.vim"
   e. 另外解释下, $HOME为当前用户目录的路径, $VIMRUNTIME路径为"/Applications/MacVim.app/Contents/Resources/vim"。可以在MacVim中输入":echo $VIMRUNTIME"来查看这些系统变量的路径。
+
 2. Light Weight Customization
   找到用户配置的文件"mvim $HOME/.vimrc", 然后在"source ~/.vimrc.before"之后, "exe 'source ' . g:janus_vim_path . '/core/plugins vim'"之前添加自己的一些个性化配置，比如设置字体，高亮。。。(范例见.vimrc)
+
 3. 添加其他plugin
   a. 如果想添加其他的Vim plugins, 在终端输入"mkdir ~/.janus"创建文件夹。
   b. 移到该文件夹"cd ~/.janus", "git init"设该文件夹为git repository。
@@ -26,6 +28,7 @@ Configuration Customization
     输入"git clone https://github.com/jiangmiao/auto-pairs.git auto-pairs"
     或者"git submodule add https://github.com/jiangmiao/auto-pairs.git auto-pairs"
     最后一个参数是plugin存放在的本地文件夹(理论上自己命名), 不过为了统一, 直接与前面的git一致。
+
 4. 推荐plugin
   a. auto-pairs https://github.com/jiangmiao/auto-pairs
   b. emmet-vim https://github.com/mattn/emmet-vim for HTML CSS
